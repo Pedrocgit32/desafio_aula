@@ -16,7 +16,7 @@ async function handleSubmit(event) {
 
   if (result.success) {
     console.log(result.data)
-    localStorage.setItem('userName', result.data[0].email)
+    localStorage.setItem('userName', result.data[0].name)
     window.location.href = "../home/home.html";
   } else {
     alert(result.message);
